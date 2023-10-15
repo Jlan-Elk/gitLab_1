@@ -1,0 +1,59 @@
+Git and GIthub
+
+>> git: is a versiton control system.
+>> Git is not the same as GitHub.
+>> GitHub makes tools that use Git.
+>> GitHub is the largest host of source code in the world
+
+> git init ; 
+Initialized empty Git repository in /Users/user/myproject/.git/
+> git config ;
+> pull is a combination of 2 different commands: fetch & merge
+>fetch: gets all the change history of a tracked branch/repo.
+>merge: combines the current branch, with a specified branch.
+> git init : create a local repo
+> git clone <url> : get the content of remote repo
+> git help :see the commands
+> git status : see the status of your repo , repository hosting service
+> .gitignore: untracked files tht Git ignore such as 
+file , folder/ , *.log , !important /*.log
+
+> Workflow:
+1.Working Directory: Where you work.Create new files, edits or delete files etc.
+2.Staging Area(index): Before taking a snapshot, you are taking the files to a stage.Prepare files to be commited.
+3.Repository:Committed snapshots of your project will be stored here with a full version history.
+
+>>Working directory: lemonade.txt dosyasinda uzerinde calistigimi varsaylim
+>>Stage file options 
+-git add <lemonade.txt> konumutuyla artik tum degisikleri takip etmeye basla (stage one file)
+-git add .(stage all files command)
+>>Record the current state!! (bazen klasur uzerinde calisirken klasurden anlik durumlar almak icin --> git stash : stash the changes in a dirty working directory away.
+      --> git stash apply<stash> : bring stashes changes back to the working directory
+      --> git stash clear : remove all the stash entries
+>> git commit yaparaks tum  degisikleri ekleyerek repository e gonderirsiniz.
+>> git log : kisaca kayitlar demek. tum commit gesmisini gorursunuz.
+>> git rm -cached: stage in area uzereinde calsitiginiz bir dosyayi working directory e gondererek uzerinde calistigniz dosylari degistiklikler yapibilirsiniz.
+>> git commit -m"message" : commit the files on the stage
+>> git commit -am"message" : add a commit all -tracked-files
+>> git commit --amend : modify the most recent commit
+>> git checkout : from repository dan ta working direktory e gondermek icin kullnilir
+>> git diff: kodlar arasindaki farki gormek icin
+>. git rm : remove the code or file
+
+>>Github -Remote Repository
+               Github 
+              /     (default me -origin)--> origin gorursek bu bize uzaktaki remote repo gelcek!!
+Remote repository on Gitub   !! remote ise bize github i ya da diger reposiotryleri tanimlar
+         /                   \
+Chan's machine         Marry's machine
+(local clone of repo)    (local clone of repo)     !! local diyince bu bize bzim bilgisayrai anliyoruz 
+   
+>> git clone<url> copy a repo from remote to local (sirktein tum repo larni clone lamak icin bu commutu kullaniriz.
+>> git pull : fetch + merge (don degisikleri almak icin sadece git pull kullanabiliriz.)
+>> git push :   upload your commit : (git pull un tam tersidir.     kodu commit yapttiktan sonra onu  sirketin repositorisine -cloud daki repo ya gondermek icin kulanir.
+>> git remeto add origin <url> : connect to remote repo
+>> git push -u origin master : first push
+           
+
+
+
