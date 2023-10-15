@@ -1,0 +1,28 @@
+--- GIt Branch ---
+>> repo : it's short form of repository. local da olabilir.
+>> commit: snapshot -alisverisi tamamlama
+>> Branch: paralel bir kodun uzerinde degisiklik ypacaginz calisma alani. agacin govedsine benzetilir!!
+>> Head: nerde oldugumuzu belirte bir imlec.
+>> git branch : see local branch
+>> git branch -r : see remote branches
+>> git branch -a : see all branches  or git branch --all 
+>> git branch <branch name> : create a new branch
+>> git checkout <branch name> : switch to a branch
+>> git checkout - b: create and switch to a branch
+>> git branch -d <branch name> : delete a local branch
+>> git branch -D <branch name> delete a local branch
+
+
+--- Merge ---
+>> Merge Conflicts happan when you merge branches that have competing commits, and Git needs your help to decide which changes to incorporate in the final merge.
+>> merge pull request : it's a feature of github. kodu birlestirme istegi.
+
+--- Pull Request ---(kodumu ana kodla birlestir istegi)
+>> it's a Github's feature. not GIt's feature!!
+>> It allows you to contribute to other projects
+>> let you tell others bout changes you've pushes to a branch in a repository on Github.
+>> You create a pull request to porpose and colloborate on changes to a repository. These changes are proposed in a branch, which ensures that the master branch only contains finished and approved work.
+
+--- Fork ---
+>> github dan bir repo yu yine bir repo ya kopyaliyoruz.
+>> a Fork is a copy of a repository.
